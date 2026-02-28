@@ -1,0 +1,8 @@
+{
+  "name": "cafe-2-admin-monorepo",
+  "version": "1.0.0",
+  "workspaces": [
+    "cafe_2_admin",
+    "backend"
+  ]
+}

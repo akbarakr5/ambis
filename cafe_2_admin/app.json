@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Cafe Admin",
+    "slug": "cafe-admin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "scheme": "cafeadmin",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cafe.admin"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.cafe.admin",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera for QR scanning"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+    ,
+    "extra": {
+      "SUPABASE_URL": "https://csymdwzebhkfxjdyykrb.supabase.co",
+      "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzeW1kd3plYmhrZnhqZHl5a3JiIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MTQwMjU3MSwiZXhwIjoyMDg2OTc4NTcxfQ.yApFlbcpCOF_QVSdtrLaqcg2EoiHri7LymmTLeye0-c",
+      "SUPABASE_SERVICE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzeW1kd3plYmhrZnhqZHl5a3JiIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MTQwMjU3MSwiZXhwIjoyMDg2OTc4NTcxfQ.yApFlbcpCOF_QVSdtrLaqcg2EoiHri7LymmTLeye0-c",
+      "JWT_SECRET": "cafe_secret_2024_ajmal_xyz",
+      "DATABASE_URL": "postgresql://postgres:AmbisCafe47$@db.csymdwzebhkfxjdyykrb.supabase.co:5432/postgres"
+    }
+  }
+}
